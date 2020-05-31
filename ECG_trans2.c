@@ -14,7 +14,7 @@ ISR (TIMER1_OVF_vect)
 	TIFR|=(1<<TOV1);
 	TCNT1=57723;
 	i++;
-	if (i==10)
+	if ((i<60)|(i>100))
 	{
 		lcd_print(itoa(TCNT0,s,10));
 		PORTB&=~(1<<PB4);
