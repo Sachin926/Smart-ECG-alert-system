@@ -14,5 +14,5 @@ It works on SPI communication protocol
 Since proteus has no such library of NRF24L01 so for simulaton purposes both the transmitter's and the receiver's SPI pins (MISO, MOSI, SCK and SS) have been connected with each other through wires depicting the presence of NRF24L01
 
 
-# Main woring Idea
+# Main working Idea
 The main woring idea behind the model is that there chances for a person to face heart attack if his heart beat goes below 60 b.p.m. or above 100 b.p.m.
