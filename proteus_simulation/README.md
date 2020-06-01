@@ -14,5 +14,6 @@ upload the receiver hex file on the ATmega 16 of the receiver
 
 
 
-
+#The Heart Rate Sensor-
 Circuit diagram of the heart beat sensor has also been provided for referrence
+In the main simulation of the project the LOGIC TOGGLE works as the heart beat sensor
