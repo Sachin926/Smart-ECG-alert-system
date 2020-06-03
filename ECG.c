@@ -67,6 +67,7 @@ int main()
 		break;
 		end:;
 	}
+	begin:;
 	lcd_cmd(0x01);
 	i=0;
 	while (1)
@@ -121,6 +122,7 @@ int main()
 			lcd_print("message sent");
 			_delay_ms(1000);
 			lcd_init();
+			goto begin;
 		}
 	}
 }
