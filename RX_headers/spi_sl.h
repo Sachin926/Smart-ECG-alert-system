@@ -1,7 +1,7 @@
 void SPIsl_init()
 {
-	DDRB &= ~((1<<6)|(1<<8)|(1<<5));//mosi , sck and ss as input
-	DDRB |=(1<<7);//miso as output pin
+	DDRB &= ~((1<<6)|(1<<8)|(1<<5));
+	DDRB |=(1<<7);
 	SPCR=(1<<SPE);
 }
 char SPI_Receive()			
