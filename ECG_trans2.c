@@ -16,6 +16,7 @@ ISR (TIMER1_OVF_vect)
 	i++;
 	if (i==60)
 	{
+		i=0;
 		if ((TCNT0<60)|(TCNT0>100))
 		{
 		lcd_print(itoa(TCNT0,s,10));
