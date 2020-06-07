@@ -1,8 +1,8 @@
 void SPImstr_init()
 {
-	DDRB |= (1<<PB4)|(1<<PB5)|(1<<PB7);//mosi , sck and ss as output
-	DDRB &= ~(1<<PB6);	//miso as input
-	PORTB |= (1<<PB4);	//ss high
+	DDRB |= (1<<PB4)|(1<<PB5)|(1<<PB7);
+	DDRB &= ~(1<<PB6);	
+	PORTB |= (1<<PB4);	
 	SPCR = (1<<SPE)|(1<<MSTR)|(1<<SPR0);	
 	SPSR &= ~(1<<SPI2X);	
 }
